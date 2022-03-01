@@ -40,15 +40,15 @@ create table AspNetUsers(
 	ConcurrencyStamp nvarchar(450) NULL,
 	Email nvarchar(450) NULL,
 	EmailConfirmed nvarchar(450) NULL,
-	LockoutEnabled bit NOT NULL,
+	LockoutEnabled int(16) NOT NULL,
 	LockoutEnd timestamp(6) NULL,
 	NormalizedEmail nvarchar(256) NULL,
 	NormalizedUserName nvarchar(256) NULL,
 	PasswordHash nvarchar(450) NULL,
 	PhoneNumber nvarchar(450) NULL,
-	PhoneNumberConfirmed bit NOT NULL,
+	PhoneNumberConfirmed int(16) NOT NULL,
 	SecurityStamp nvarchar(450) NULL,
-	TwoFactorEnabled bit NOT NULL,
+	TwoFactorEnabled int(16) NOT NULL,
 	UserName nvarchar(256) NULL,
 	PRIMARY KEY (Id)
 );
